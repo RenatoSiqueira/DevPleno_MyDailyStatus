@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 const App = ({ Component, pageProps }) => {
     return (
         <div>
-            <Header />
+            <Header logout={true} />
             <div className='mni-h-screen container mx-auto'>
                 <Component {...pageProps} />
             </div>
