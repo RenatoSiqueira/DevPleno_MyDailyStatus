@@ -1,7 +1,21 @@
 import React from 'react'
+import '../styles/styles.css'
 
-const App = () => {
-    return <h1>AA</h1>
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+
+const App = ({ Component, pageProps }) => {
+    return (
+        <div>
+            <Header />
+            <div className='mni-h-screen container mx-auto'>
+                <Component {...pageProps} />
+            </div>
+            <div>
+                <Footer />
+            </div>
+        </div>
+    )
 }
 
 export default App
